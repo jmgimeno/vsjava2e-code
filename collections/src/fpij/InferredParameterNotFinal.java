@@ -5,18 +5,19 @@
  * courses, books, articles, and the like. Contact us if you are in doubt.
  * We make no guarantees that this code is fit for any purpose.
  * Visit https://pragprog.com/titles/vsjava2e for more book information.
-***/
+ ***/
 package fpij;
 
 import java.util.List;
 import java.util.Arrays;
+
 import static fpij.Folks.friends;
 
 public class InferredParameterNotFinal {
-  public static void main(final String[] args) {
-    friends.forEach(name -> {
-      name = name.toUpperCase();
-      System.out.println(name);
-    });
-  }
+    public static void main(final String[] args) {
+        friends.forEach(name -> {
+            name = name.toUpperCase();
+            System.out.println(name);
+        });
+    }
 }
